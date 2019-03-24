@@ -1,0 +1,143 @@
+@font-face{
+    font-family: 'Russian Land';
+    src: url(../fonts/15387.otf);
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: #fff;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul, li{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    width: 100%;
+}
+
+.container{
+    padding: 70px 200px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        padding: 30px 50px;
+    }
+    .main_text{
+        width: calc(85% - 50px);
+    }
+    .main_text h1{
+        font-size: 50px !important;
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+nav a{
+    padding: 20px;
+    margin: -20px;
+}
+
+.nav a:last-child{
+    text-align: right;
+}
+.logo{
+    font-weight: bold;
+}
+
+.logo:after{
+    content: url("../img/smile.png");
+    position: absolute;
+    margin-left: -9px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.dots{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 72vh;
+    position: absolute;
+}
+
+.dot{
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+    margin: 16px 0;
+    cursor: pointer;
+}
+
+.dot.active{
+    background-color: #fff;
+}
+
+.main_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: calc(85% - 200px);
+    height: 74vh;
+    margin-left: 15%;
+    z-index: 2;
+}
+
+.main_text h1{
+    font-family: "Russian Land";
+    font-size: 96px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.main_text p{
+    font-family: Yantramanav;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: 0.01em;
+    color: #999999;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.magnet__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    z-index: 1;
+}
+
+.magnet{
+    z-index: 2;
+    position: absolute;
+    width: 25%;
+    padding: 0;
+    margin: 0;
+}

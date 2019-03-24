@@ -1,0 +1,1 @@
+const tilt = $('.js-tilt').tilt();
