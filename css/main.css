@@ -33,22 +33,12 @@ main{
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 768px){
-    .container{
-        padding: 30px 50px;
-    }
-    .main_text{
-        width: calc(85% - 50px);
-    }
-    .main_text h1{
-        font-size: 50px !important;
-    }
-}
-
 nav{
     display: flex;
     justify-content: space-between;
     font-size: 16px;
+    position: absolute;
+    width: calc(100% - 400px);
 }
 
 nav a{
@@ -60,6 +50,22 @@ nav a{
 .nav a:last-child{
     text-align: right;
 }
+
+@media screen and (max-width: 768px){
+    .container{
+        padding: 30px 50px;
+    }
+    .main_text{
+        width: calc(85% - 50px);
+    }
+    .main_text h1{
+        font-size: 50px !important;
+    }
+    nav{
+        width: calc(100% - 100px);
+    }
+}
+
 .logo{
     font-weight: bold;
 }
@@ -79,7 +85,7 @@ nav a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 72vh;
+    height: calc(100vh - 144px);
     position: absolute;
 }
 
@@ -102,7 +108,7 @@ nav a{
     justify-content: center;
     position: absolute;
     width: calc(85% - 200px);
-    height: 74vh;
+    height: calc(100vh - 144px);
     margin-left: 15%;
     z-index: 2;
 }
@@ -131,7 +137,7 @@ nav a{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 70vh;
+    height: calc(100vh - 144px);
 }
 
 .magnet{
@@ -139,4 +145,10 @@ nav a{
     width: 25%;
     padding: 0;
     margin: 0;
+}
+
+@media screen and (max-width: 768px){
+    .magnet{
+        width: 50%;
+    }
 }
