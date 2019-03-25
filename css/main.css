@@ -29,7 +29,7 @@ main{
 }
 
 .container{
-    padding: 70px 200px;
+    padding: 72px 200px;
     box-sizing: border-box;
 }
 
@@ -54,6 +54,7 @@ nav{
 nav a{
     padding: 20px;
     margin: -20px;
+    letter-spacing: 0.01em;
 }
 
 .nav a:last-child{
@@ -131,11 +132,9 @@ nav a{
     justify-content: center;
     width: 100%;
     height: 70vh;
-    z-index: 1;
 }
 
 .magnet{
-    z-index: 2;
     position: absolute;
     width: 25%;
     padding: 0;
