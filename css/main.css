@@ -12,7 +12,13 @@ body{
     color: #fff;
     font-family: 'Yantramanav', sans-serif;
     overflow: hidden;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
+
+img { pointer-events: none; }
 
 a{
     text-decoration: none;
