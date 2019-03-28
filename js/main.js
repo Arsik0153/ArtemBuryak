@@ -2,7 +2,7 @@
 $('.magnet__wrap').tilt({
     transition:     true,
     speed:          300, 
-    maxTilt:        10,
+    maxTilt:        3,
     reset: false
 })
 
@@ -25,7 +25,7 @@ const noise = () => {
         const len = buffer32.length;
 
         for (let i = 0; i < len; i++) {
-            if (Math.random() < 0.5) {
+            if (Math.random() < 0.1) {
                 buffer32[i] = 0xff000000;
             }
         }
