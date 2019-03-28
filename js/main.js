@@ -1,5 +1,10 @@
 //Tilt.js
-const tilt = $('.js-tilt').tilt();
+$('.magnet__wrap').tilt({
+    transition:     true,
+    speed:          300, 
+    maxTilt:        10,
+    reset: false
+})
 
 //Background noise #noise .noise
 const noise = () => {
