@@ -1,9 +1,10 @@
 //Tilt.js
 $('.magnet__wrap').tilt({
     transition:     true,
-    speed:          300, 
-    maxTilt:        3,
-    reset: false
+    speed:          300,
+    easing:         "cubic-bezier(.3,.98,.52,.99)",
+    speed:          "1000",
+    maxTilt:        10
 })
 
 //Background noise #noise .noise
@@ -25,7 +26,7 @@ const noise = () => {
         const len = buffer32.length;
 
         for (let i = 0; i < len; i++) {
-            if (Math.random() < 0.1) {
+            if (Math.random() < 0.05) {
                 buffer32[i] = 0xff000000;
             }
         }

@@ -197,4 +197,5 @@ nav a{
 
 .magnet__wrap{
     z-index: 5;
+    transition: transform 3s cubic-bezier(0.19, 1, 0.22, 1);
 }
