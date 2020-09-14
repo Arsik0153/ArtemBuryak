@@ -1,10 +1,10 @@
 //Tilt.js
 $('.magnet__wrap').tilt({
     transition:     true,
-    speed:          300,
+    speed:          100,
     easing:         "cubic-bezier(.3,.98,.52,.99)",
     speed:          "1000",
-    maxTilt:        12
+    maxTilt:        20
 })
 
 //Magnetic btn
